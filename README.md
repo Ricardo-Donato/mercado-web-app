@@ -35,4 +35,45 @@
         <li>Exibe sugestão de currículos que combinam com o perfil desejado pela vaga disponibilizada pela empresa (GET)</li>
       </ul>
     </ul>
-</ul>    
+</ul>   
+
+<h2>Requisições</h2>
+<ul>
+  <li>Métodos HTTP - Front-End</li>
+  <ul>
+    <li>POST</li>
+    <li>GET</li>
+    <li>PUT</li>
+    <li>DELETE</li>
+    <li>Para manutenção dos seguintes aspectos:</li>
+    <ul>
+      <li>Pessoa (editar dados pessoais, excluir conta)</li>
+      <ul>
+        <li>Currículo (atualizar currículo)</li>
+      </ul>
+      <li>Empresa (editar localização)</li>
+      <ul>
+        <li>Vaga (atualizar requisitos da vaga, excluir)</li>
+      </ul>
+      <li>Comunicação com o back-end</li>
+    </ul>
+  </ul>
+  <li>Métodos CRUD para banco de dados no Back-end</li>
+      <ul>
+        <li>Validação de dados vindos do front-end</li>
+      </ul>
+  <li>Arquitetura Cliente/Servidor</li>
+  <ul>
+    <li>Referências</li>
+    <ul>
+		<li>https://jaimeneeves.medium.com/explorando-a-api-geolocation-em-javascript-um-guia-passo-a-passo-94d332c96f0d</li>
+		<li>https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API</li>
+		<li>https://www.escoladnc.com.br/blog/crud-o-que-e-e-como-funciona</li>
+		<li>https://apidog.com/pt/blog/http-methods/</li>
+    </ul>
+  </ul>
+</ul>
+<br>
+<br>
+<br>
+<p>Documentação desenvolvida por: PEDRO RICARDO DONATO DA SILVA.</p>
