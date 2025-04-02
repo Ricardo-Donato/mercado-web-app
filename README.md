@@ -71,6 +71,4 @@
 	<li>https://apidog.com/pt/blog/http-methods/</li>
 </ul>
 <br>
-<br>
-<br>
 <p>Documentação desenvolvida por: PEDRO RICARDO DONATO DA SILVA.</p>
