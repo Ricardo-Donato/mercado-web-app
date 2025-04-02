@@ -9,16 +9,30 @@
 
 <h2>Funcionalidades prévias</h2>
 <ul>
-  <li>Cadastro + Login</li><br>
-      |__Pessoa<br>
-          |__Currículo/Curriculum Vitae (POST) <br>
-          |__O cadastro será feito a partir de um formulário que permitirá traçar o perfil do candidato de forma automática, isto é, pelo próprio sistema com IA.<br>
-          |__A partir deste perfil, o usuário terá à disposição noções para criar uma “trilha de desenvolvimento” que poderá ser feita a distância ou presencialmente (parceira com centros de educação, como os técnicos da ETE 25 de Julho, SEG, Senac)<br>
-  Empresa
-  Vagas (POST)
-  Busca de currículos e vagas
-  Pessoa
-  Exibe sugestão de vagas que combinam com o perfil e currículo disponibilizada pela empresa (GET)
-  Empresa
-  Exibe sugestão de currículos que combinam com o perfil desejado pela vaga disponibilizada pela empresa (GET)
-</ul>
+  <li>Cadastro + Login</li>
+  <ul>
+    <li>Pessoa</li>
+    <ul>
+      <li>Currículo/Curriculum Vitae (POST)</li>
+      <li>O cadastro será feito a partir de um formulário que permitirá traçar o perfil do candidato de forma automática, isto é, pelo próprio sistema com IA.</li>
+      <li>A partir deste perfil, o usuário terá à disposição noções para criar uma “trilha de desenvolvimento” que poderá ser feita a distância ou presencialmente (parceira com centros de educação, como os técnicos da ETE 25 de Julho, SEG, Senac)</li>
+    </ul>
+  </ul>
+  <ul>
+    <li>Empresa</li>
+    <ul>
+      <li>Vagas (POST)</li>
+    </ul>
+  </ul>
+  <li>Busca de currículos e vagas</li>
+    <ul>
+      <li>Pessoa</li>
+      <ul>
+        <li>Exibe sugestão de vagas que combinam com o perfil e currículo disponibilizada pela empresa (GET)</li>
+      </ul>
+      <li>Empresa</li>
+      <ul>
+        <li>Exibe sugestão de currículos que combinam com o perfil desejado pela vaga disponibilizada pela empresa (GET)</li>
+      </ul>
+    </ul>
+</ul>    
