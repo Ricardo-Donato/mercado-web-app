@@ -4,9 +4,7 @@
 <p>Além disso, haverá a recomendação/sugestões tanto para empresas quanto pessoas utilizando Inteligência Artificial (IA)/agentes de IA, como também a integração de Web APIs para obter localização do usuário e sugerir candidatos perto da empresa e vagas perto do candidato.</p>
 <p>Adiante, é possível transformar o projeto em um Micro SaaS ou até SaaS, como também, a partir do conhecimento em React e React Native, a criação de um aplicativo mobile.</p>
 <p>Este é um projeto que está desenvolvido durante a matéria de <b>Desenvolvimento Web</b> do curso de Ciência da Computação - Bacharelado.</p>
-
-
-
+<br>
 <h2>Funcionalidades prévias</h2>
 <ul>
   <li>Cadastro + Login</li>
@@ -36,7 +34,7 @@
       </ul>
     </ul>
 </ul>   
-
+<br>
 <h2>Requisições</h2>
 <ul>
   <li>Métodos HTTP - Front-End</li>
@@ -63,15 +61,14 @@
         <li>Validação de dados vindos do front-end</li>
       </ul>
   <li>Arquitetura Cliente/Servidor</li>
-  <ul>
-    <li>Referências</li>
-    <ul>
-		<li>https://jaimeneeves.medium.com/explorando-a-api-geolocation-em-javascript-um-guia-passo-a-passo-94d332c96f0d</li>
-		<li>https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API</li>
-		<li>https://www.escoladnc.com.br/blog/crud-o-que-e-e-como-funciona</li>
-		<li>https://apidog.com/pt/blog/http-methods/</li>
-    </ul>
-  </ul>
+</ul>
+<br>
+<h2>Referências</h2>
+<ul>
+	<li>https://jaimeneeves.medium.com/explorando-a-api-geolocation-em-javascript-um-guia-passo-a-passo-94d332c96f0d</li>
+	<li>https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API</li>
+	<li>https://www.escoladnc.com.br/blog/crud-o-que-e-e-como-funciona</li>
+	<li>https://apidog.com/pt/blog/http-methods/</li>
 </ul>
 <br>
 <br>
