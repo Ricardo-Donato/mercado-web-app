@@ -7,16 +7,30 @@
 
 header {
     width: 100vw;
+    height: 20vh;
+    background-color: blue;
+}
+
+nav {
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(170, 170, 228);
 }
 
 aside {
     width: 100vw;
+    height: 20vh;
+    background-color: rgb(0, 255, 21);
 }
 
 main {
     width: 100vw;
+    height: 20vh;
+    background-color: rgb(255, 0, 34);
 }
 
 footer {
     width: 100vw;
+    height: 20vh;
+    background-color: rgb(179, 255, 0);
 }
