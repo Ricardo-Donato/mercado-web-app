@@ -4,3 +4,19 @@
     margin: 0;
     list-style: none;
 }
+
+header {
+    width: 100vw;
+}
+
+aside {
+    width: 100vw;
+}
+
+main {
+    width: 100vw;
+}
+
+footer {
+    width: 100vw;
+}
