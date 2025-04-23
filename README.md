@@ -73,9 +73,9 @@ Com base nas funcionalidades descritas, segue uma proposta de layout para o Web 
 
 - Recursos em Destaque  
   - Cards com ícones e textos curtos:  
-    - "Sugestões personalizadas por IA" 🤖  
-    - "Vagas próximas à sua localização" 📍  
-    - "Parcerias com instituições de ensino" 🎓  
+    - "Sugestões personalizadas por IA"
+    - "Vagas próximas à sua localização"
+    - "Parcerias com instituições de ensino" 
 
  2. Página de Cadastro/Login
 - Design Minimalista  
