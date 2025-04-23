@@ -185,4 +185,3 @@ Este layout prioriza a usabilidade e a personalização via IA, mantendo a inter
 	<li>https://apidog.com/pt/blog/http-methods/</li>
 </ul>
 <br>
-<p>Documentação desenvolvida por: PEDRO RICARDO DONATO DA SILVA.</p>
