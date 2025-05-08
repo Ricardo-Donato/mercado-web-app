@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../Assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" type="imagex/png" href="../Assets/Images/pandemic_covid_work_from_home_telecommuting_icon_191696.ico">
+    <link rel="shortcut icon" type="imagex/png"
+        href="../Assets/Images/pandemic_covid_work_from_home_telecommuting_icon_191696.ico">
     <style>
         .registration-container {
             max-width: 700px;
@@ -306,6 +307,7 @@
     </style>
     <script src="https://unpkg.com/imask"></script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -326,6 +328,7 @@
     </header>
     <main>
         <div class="container">
+            <div id="message-container"></div>
             <div class="registration-container">
                 <div class="registration-header">
                     <h2>Cadastro</h2>
@@ -574,7 +577,8 @@
                             </div>
                         </div>
                         <div class="step-buttons">
-                            <button type="button" class="prev-step" id="to-step-1">Anterior</button>
+                            <button type="button" class="prev-step" id="to-step-1"
+                                onclick="navigateToStep(1)">Anterior</button>
                             <button type="button" class="next-step" id="to-step-3">Próximo</button>
                         </div>
                     </div>
@@ -851,7 +855,7 @@
         });
 
         function showMessage(text, type) {
-            const messageContainer = document.getElementById('message-container');
+            let messageContainer = document.getElementById('message-container');
             messageContainer.textContent = text;
             messageContainer.className = type;
             messageContainer.style.display = 'block';
