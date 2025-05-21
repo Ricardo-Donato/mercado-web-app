@@ -65,6 +65,11 @@ function setupEventListeners() {
         loginForm.addEventListener('submit', handleLogin);
     }
 
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', handleContact);
+    }
+
     const cvForm = document.getElementById('cv-form');
     if (cvForm) {
         cvForm.addEventListener('submit', handleCVSubmission);
@@ -103,6 +108,19 @@ function handleLogin(event) {
             window.location.href = `dashboard-${userType}.html`;
         }, 2000);
     }
+}
+
+function handleContact(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const contactData = Object.fromEntries(formData.entries());
+
+    console.log('Contact data:', contactData);
+    showMessage('success', 'Mensagem enviada com sucesso! Em breve entraremos em contato.');
+
+    setTimeout(() => {
+        window.location.href = '../../index.html';
+    }, 2500);
 }
 
 function handleCVSubmission(event) {

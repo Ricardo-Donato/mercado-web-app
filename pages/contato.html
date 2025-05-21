@@ -136,6 +136,7 @@
 
     <main>
         <div class="container">
+            <div id="message-container"></div>
             <div class="contact-container">
                 <div class="contact-header">
                     <h2>Entre em Contato</h2>
@@ -152,7 +153,7 @@
                         <a href="#" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" autocomplete="off">
+                <form id="contact-form" class="contact-form" autocomplete="off">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
 
@@ -205,14 +206,6 @@
     </footer>
 
     <script src="../Assets/js/main.js"></script>
-    <script>
-        // Apenas exibe um alerta ao enviar o formulário (simulação)
-        document.querySelector('.contact-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
-            this.reset();
-        });
-    </script>
 </body>
 
 </html>
