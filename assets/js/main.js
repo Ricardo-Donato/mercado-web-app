@@ -88,7 +88,7 @@ function handleRegistration(event) {
 
     if (validateRegistrationData(userData)) {
         console.log('Registration data:', userData);
-        showMessage('success', 'Cadastro realizado com sucesso! Redirecionando para o login...');
+        showMessage('success', 'Cadastro realizado com sucesso! Redirecionando ao login...');
         setTimeout(() => {
             window.location.href = 'login.html';
         }, 2000);
@@ -102,7 +102,7 @@ function handleLogin(event) {
 
     if (validateLoginData(loginData)) {
         console.log('Login data:', loginData);
-        showMessage('success', 'Login realizado com sucesso! Redirecionando para o dashboard...');
+        showMessage('success', 'Login realizado com sucesso! Redirecionando ao dashboard...');
         setTimeout(() => {
             const userType = 'candidato';
             window.location.href = `dashboard-${userType}.html`;
