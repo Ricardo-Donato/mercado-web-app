@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard da Empresa - ConectaVagas</title>
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/icon-page.ico">
+    <style>
+        body {
+            background: #f4f8fb;
+        }
+
+        .dashboard-container {
+            max-width: 1100px;
+            margin: 32px auto;
+            padding: 0 16px;
+        }
+
+        .dashboard-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .dashboard-title-row h2 {
+            color: #2a3a4a;
+            font-size: 1.35rem;
+            font-weight: 600;
+        }
+
+        .dashboard-title-row a {
+            color: #007bff;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .dashboard-title-row a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        .people-cards-row {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .people-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+            padding: 18px 20px 12px 20px;
+            min-width: 320px;
+            max-width: 350px;
+            flex: 1 1 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 2px solid transparent;
+            transition: border 0.2s;
+        }
+
+        .people-card:hover {
+            border: 2px solid #007bff;
+        }
+
+        .people-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 8px;
+            color: #fff;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+
+        .label-nome {
+            background: #b96fd9;
+        }
+
+        .label-aprendizagem {
+            background: #1db954;
+        }
+
+        .people-possibility {
+            font-size: 0.78rem;
+            color: #7b7b7b;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .people-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #2a3a4a;
+            margin-bottom: 2px;
+        }
+
+        .people-company {
+            font-size: 0.98rem;
+            color: #6b6b6b;
+            margin-bottom: 6px;
+        }
+
+        .people-location {
+            font-size: 0.93rem;
+            color: #444;
+            margin-bottom: 2px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .people-details-row {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 6px;
+        }
+
+        .people-details-row .people-detail {
+            display: flex;
+            align-items: center;
+            font-size: 0.93rem;
+            color: #444;
+            gap: 6px;
+        }
+
+        .people-salary-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eaeaea;
+            margin-top: 12px;
+            padding-top: 10px;
+        }
+
+        .people-salary {
+            font-weight: 700;
+            color: #222;
+            font-size: 1.08rem;
+        }
+
+        .people-benefits {
+            font-size: 0.93rem;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        @media (max-width: 800px) {
+            .people-cards-row {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .people-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>ConectaVagas</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="dashboard-title-row"
+                style="background: #eaf3fa; padding: 18px 20px 10px 20px; border-radius: 12px 12px 0 0;">
+                <h2>Candidatos dispon�veis</h2>
+            </div>
+            <div class="people-cards-row"
+                style="background: #eaf3fa; padding: 24px 20px 20px 20px; border-radius: 0 0 12px 12px;">
+                <!-- Vaga 1 -->
+                <div class="people-card">
+                    <span class="people-label label-nome">PEDRO SILVA</span>
+                    <div class="people-possibility">3 ANO</div>
+                    <div class="people-title">AUXILIAR DE INSTALAÇÃO</div>
+                    <div class="people-company">CONTRI E CONTRI LTDA</div>
+                    <div class="people-location"><i class="fas fa-map-marker-alt"></i> IJUÍ - S�O GERALDO</div>
+                    <div class="people-details-row">
+                        <div class="people-detail"><i class="fas fa-building"></i> Presencial</div>
+                        <div class="people-detail"><i class="fas fa-clock"></i> Dia inteiro</div>
+                    </div>
+                    <div class="people-salary-row">
+                        <div>
+                            <div class="people-salary">Bolsa-auxílio R$ 1.250/mês</div>
+                            <div class="people-benefits"><i class="fas fa-ticket-alt"></i> VT integral</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vaga 2 -->
+                <div class="people-card">
+                    <span class="people-label label-aprendizagem">APRENDIZAGEM</span>
+                    <div class="people-possibility">OCUPAÇÕES ADMINISTRATIVAS II</div>
+                    <div class="people-title">OCUPAÇÕES ADMINISTRATIVAS II</div>
+                    <div class="people-company">SOBERANA ALIMENTOS LTDA FILIAL</div>
+                    <div class="people-location"><i class="fas fa-map-marker-alt"></i> IJUÍ - DISTRITO INDUSTRIAL</div>
+                    <div class="people-details-row">
+                        <div class="people-detail"><i class="fas fa-building"></i> Presencial</div>
+                        <div class="people-detail"><i class="fas fa-clock"></i> TARDE</div>
+                    </div>
+                    <div class="people-salary-row">
+                        <div>
+                            <div class="people-salary">Salário R$ 600/mês</div>
+                            <div class="people-benefits"><i class="fas fa-ticket-alt"></i> VT integral</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais cards de vagas aqui conforme necessário -->
+            </div>
+        </div>
+        <div class="container">
+            <div id="message-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>ConectaVagas</h2>
+                    <p>Encontre talentos, encontre futuro</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                        <li><a href="termos_privacidade.html">Termos de Uso e Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@conectavagas.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ConectaVagas. Todos os direitos reservados.</p>
+                <p>Projeto desenvolvido por Pedro Ricardo Donato da Silva</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Assets/js/main.js"></script>
+</body>
+
+</html>

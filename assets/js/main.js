@@ -129,7 +129,7 @@ function handleCVSubmission(event) {
     const cvData = Object.fromEntries(formData.entries());
 
     console.log('CV data:', cvData);
-    showMessage('success', 'CurrÃ­culo enviado com sucesso!');
+    showMessage('success', 'Currículo enviado com sucesso!');
 
     setTimeout(() => {
         showAIRecommendations();
@@ -156,11 +156,11 @@ function validateRegistrationData(data) {
     const errors = [];
 
     if (!data.nome || data.nome.trim() === '') {
-        errors.push('Nome Ã© obrigatÃ³rio');
+        errors.push('Nome é obrigatório');
         isValid = false;
     }
     if (!data.email || !isValidEmail(data.email)) {
-        errors.push('Email invÃ¡lido');
+        errors.push('Email inválido');
         isValid = false;
     }
     if (!data.senha || data.senha.length < 6) {
@@ -168,7 +168,7 @@ function validateRegistrationData(data) {
         isValid = false;
     }
     if (data.senha !== data.confirmarSenha) {
-        errors.push('As senhas nÃ£o coincidem');
+        errors.push('As senhas não coincidem');
         isValid = false;
     }
     if (!isValid) {
@@ -182,11 +182,11 @@ function validateLoginData(data) {
     const errors = [];
 
     if (!data.email || !isValidEmail(data.email)) {
-        errors.push('Email invÃ¡lido');
+        errors.push('Email inválido');
         isValid = false;
     }
     if (!data.senha) {
-        errors.push('Senha Ã© obrigatÃ³ria');
+        errors.push('Senha é obrigatória');
         isValid = false;
     }
     if (!isValid) {
@@ -244,7 +244,7 @@ function showAIRecommendations() {
             {
                 title: 'Desenvolvedor Front-end',
                 company: 'TechSolutions',
-                location: 'SÃ£o Paulo, SP',
+                location: 'São Paulo, SP',
                 match: 95
             },
             {
@@ -260,7 +260,7 @@ function showAIRecommendations() {
                 match: 82
             }
         ];
-        let html = '<h3>Vagas Recomendadas para VocÃª</h3>';
+        let html = '<h3>Vagas Recomendadas para Você</h3>';
         html += '<div class="recommendations-grid">';
         recommendations.forEach(job => {
             html += `
@@ -285,7 +285,7 @@ function showCandidateMatches() {
     if (matchesContainer) {
         const candidates = [
             {
-                name: 'JoÃ£o Silva',
+                name: 'João Silva',
                 title: 'Desenvolvedor Full Stack',
                 skills: ['JavaScript', 'React', 'Node.js', 'MongoDB'],
                 match: 92
@@ -342,11 +342,11 @@ function getUserLocation() {
             },
             error => {
                 console.error('Error getting location:', error);
-                showMessage('error', 'NÃ£o foi possÃ­vel obter sua localizaÃ§Ã£o. Algumas funcionalidades podem ser limitadas.');
+                showMessage('error', 'Não foi possível obter sua localização. Algumas funcionalidades podem ser limitadas.');
             }
         );
     } else {
-        showMessage('error', 'GeolocalizaÃ§Ã£o nÃ£o Ã© suportada pelo seu navegador. Algumas funcionalidades podem ser limitadas.');
+        showMessage('error', 'Geolocalização não é suportada pelo seu navegador. Algumas funcionalidades podem ser limitadas.');
     }
 }
 
@@ -367,7 +367,7 @@ function findNearbyJobs(latitude, longitude) {
     const nearbyJobsContainer = document.getElementById('nearby-jobs');
 
     if (nearbyJobsContainer) {
-        nearbyJobsContainer.innerHTML = '<p>Buscando vagas prÃ³ximas...</p>';
+        nearbyJobsContainer.innerHTML = '<p>Buscando vagas próximas...</p>';
         setTimeout(() => {
             const nearbyJobs = [
                 {
@@ -380,7 +380,7 @@ function findNearbyJobs(latitude, longitude) {
                     title: 'Vendedor',
                     company: 'Loja do Centro',
                     distance: '3.5 km',
-                    salary: 'R$ 2.000,00 + comissÃ£o'
+                    salary: 'R$ 2.000,00 + comissão'
                 },
                 {
                     title: 'Recepcionista',
@@ -389,7 +389,7 @@ function findNearbyJobs(latitude, longitude) {
                     salary: 'R$ 1.800,00'
                 }
             ];
-            let html = '<h3>Vagas PrÃ³ximas a VocÃª</h3>';
+            let html = '<h3>Vagas Próximas a Você</h3>';
             html += '<div class="nearby-jobs-grid">';
             nearbyJobs.forEach(job => {
                 html += `
